@@ -5,11 +5,9 @@ module.exports = () => {
     if (process.env.NODE_ENV !== "production") {
       mongoose.set("debug", true);
     }
-    mongoose.connect(
-      "mongodb://localhost:27017/til",
-      {
-        dbName: "til"
-      },
+    mongoose.connect('mongodb+srv://choi:1234@bulletin-board.xs7vw11.mongodb.net/?retryWrites=true&w=majority',{
+      useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
+    },
       error => {
         if (error) {
           console.log("몽고디비 연결 에러", error);
