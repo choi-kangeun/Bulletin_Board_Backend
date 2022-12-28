@@ -32,5 +32,5 @@ app.use("/member", require("./routes/memberRouter"));
 app.use("/board", require("./routes/boardRouter"));
 
 app.listen(8080, () => {
-  console.log("listen umm..umm..um...");
+  console.log("Please wait...");
 });
